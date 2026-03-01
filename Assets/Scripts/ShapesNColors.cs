@@ -15,7 +15,7 @@ public class ShapesNColors : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "RedSquare")
+        if (other.tag == "Player")
         {
             Debug.Log("fard");
         }
