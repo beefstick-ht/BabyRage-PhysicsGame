@@ -4,7 +4,13 @@ public class ShapesNColors : MonoBehaviour
 {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+=======
+
+
+
+>>>>>>> Stashed changes
 =======
 
 
@@ -22,7 +28,11 @@ public class ShapesNColors : MonoBehaviour
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     // Update is called once per frame
+=======
+  
+>>>>>>> Stashed changes
 =======
   
 >>>>>>> Stashed changes
@@ -35,7 +45,10 @@ public class ShapesNColors : MonoBehaviour
     }
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -47,6 +60,9 @@ public class ShapesNColors : MonoBehaviour
         }
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
