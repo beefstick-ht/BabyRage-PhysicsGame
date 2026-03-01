@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 208595708}
   - component: {fileID: 208595707}
   - component: {fileID: 208595706}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -819,7 +819,7 @@ MonoBehaviour:
   groundCheckRadius: 0.15
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!54 &1472650742
 Rigidbody:
   m_ObjectHideFlags: 0
