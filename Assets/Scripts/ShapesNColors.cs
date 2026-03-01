@@ -3,7 +3,13 @@ using UnityEngine;
 public class ShapesNColors : MonoBehaviour
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+=======
+
+
+
+>>>>>>> Stashed changes
 =======
 
 
@@ -15,7 +21,11 @@ public class ShapesNColors : MonoBehaviour
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     // Update is called once per frame
+=======
+  
+>>>>>>> Stashed changes
 =======
   
 >>>>>>> Stashed changes
@@ -24,7 +34,10 @@ public class ShapesNColors : MonoBehaviour
         
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,5 +46,8 @@ public class ShapesNColors : MonoBehaviour
             GetComponent<Renderer>().color = Color.white;
         }
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
