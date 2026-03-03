@@ -2,21 +2,34 @@ using UnityEngine;
 
 public class ShapesNColors : MonoBehaviour
 {
-    public GameObject cube;
+    public GameObject redCube;
+    public GameObject blueCube;
+    public GameObject greenCube;
     public bool redActive;
     public bool blueActive;
     public bool greenActive;
+
+    public GameObject redButton;
+    public GameObject greenButton;
+    public GameObject blueButton;
+
+    public GameObject door;
 
     void Start()
     {
         redActive = false;
         blueActive = false;
         greenActive = false;
+
+    
     }
 
     void Update()
     {
-        
+        if (redActive & blueActive & greenActive == true)
+        {
+            door.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,15 +52,10 @@ public class ShapesNColors : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-
-        Debug.Log("aw");
-        redActive = false;
-
-        Debug.Log("darn");
-        blueActive = false;
-
-        Debug.Log("sghoort");
-        greenActive = false;
-        
+        if (other.tag == "GreenCube")
+        {
+            Debug.Log("blunk");
+            greenActive = false;
+        }
     }
 }

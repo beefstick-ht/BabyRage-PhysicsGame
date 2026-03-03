@@ -1,15 +1,23 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 12;
+    private float jumpForce = 5f;
+    public Rigidbody rb;
+
     public float gravity = 9.8f; //player gravity
     public float groundCheckRadius = 0.15f; //how far off the ground is grounded?
     public LayerMask groundLayer;
-
-    private bool isGrounded;
-    private Vector3 velocity;
+    public bool isGrounded;
     private Transform feet;
+
+    public ForceMode forceMode;
+
+    private Vector3 velocity;
+
 
     private CharacterController controller;
 
@@ -26,8 +34,13 @@ public class PlayerController : MonoBehaviour
         CheckIsGrounded();
         Move();
         ApplyGravity();
-    }
 
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+
+    }
 
 
     private void Move()
