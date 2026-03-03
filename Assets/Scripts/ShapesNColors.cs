@@ -16,11 +16,10 @@ public class ShapesNColors : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "RedCube")
         {
             Debug.Log("fard");
-            var cubeRenderer = cube.GetComponent<Renderer>();
-            cubeRenderer.material.SetColor("_Color", Color.red);
+
         }
     }
 }
