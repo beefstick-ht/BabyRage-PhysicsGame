@@ -228,8 +228,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.67, y: 6.73, z: 12.28}
-  m_LocalScale: {x: 0.47851, y: 0.47851, z: 0.47851}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -318,6 +318,15 @@ MonoBehaviour:
   redButton: {fileID: 1379849391}
   greenButton: {fileID: 1741356572}
   blueButton: {fileID: 1989534920}
+  redEmission: {fileID: 2100000, guid: 1a707cfa1678aec478b27d38d9fb79d2, type: 2}
+  redNormal: {fileID: 2100000, guid: 7d9aab7f511f0884ab7ebc53dd2bae74, type: 2}
+  blueEmission: {fileID: 2100000, guid: f2c8885abb6c9b04fb95b9768d1dcc8b, type: 2}
+  blueNormal: {fileID: 2100000, guid: 78830117350b9084397b8c96fdb11df1, type: 2}
+  greenEmission: {fileID: 2100000, guid: 126f7dc1c7ce7804985699282ffb4dc7, type: 2}
+  greenNormal: {fileID: 2100000, guid: d3614b4580d63f04a87715bbcb3638cc, type: 2}
+  redRenderer: {fileID: 1379849394}
+  blueRenderer: {fileID: 1989534923}
+  greenRenderer: {fileID: 1741356575}
   door: {fileID: 1838416151}
 --- !u!4 &149470416
 Transform:
@@ -820,7 +829,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.87, y: 2.66, z: 6.24}
-  m_LocalScale: {x: 0.8066598, y: 0.8066598, z: 0.8066598}
+  m_LocalScale: {x: 0.5357189, y: 0.5357189, z: 0.5357189}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1184,7 +1193,6 @@ GameObject:
   - component: {fileID: 1379849395}
   - component: {fileID: 1379849394}
   - component: {fileID: 1379849393}
-  - component: {fileID: 1379849392}
   m_Layer: 0
   m_Name: RedButton
   m_TagString: Untagged
@@ -1192,28 +1200,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1379849392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379849391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19fa3a07086ae0418b4bcc9283ec06e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShapesNColors
-  redCube: {fileID: 0}
-  blueCube: {fileID: 0}
-  greenCube: {fileID: 0}
-  redActive: 0
-  blueActive: 0
-  greenActive: 0
-  redButton: {fileID: 0}
-  greenButton: {fileID: 0}
-  blueButton: {fileID: 0}
-  door: {fileID: 1838416151}
 --- !u!65 &1379849393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1821,7 +1807,6 @@ GameObject:
   - component: {fileID: 1741356576}
   - component: {fileID: 1741356575}
   - component: {fileID: 1741356574}
-  - component: {fileID: 1741356573}
   m_Layer: 0
   m_Name: GreenButton
   m_TagString: Untagged
@@ -1829,28 +1814,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1741356573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741356572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19fa3a07086ae0418b4bcc9283ec06e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShapesNColors
-  redCube: {fileID: 0}
-  blueCube: {fileID: 0}
-  greenCube: {fileID: 0}
-  redActive: 0
-  blueActive: 0
-  greenActive: 0
-  redButton: {fileID: 0}
-  greenButton: {fileID: 0}
-  blueButton: {fileID: 0}
-  door: {fileID: 1838416151}
 --- !u!65 &1741356574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2191,7 +2154,6 @@ GameObject:
   - component: {fileID: 1989534924}
   - component: {fileID: 1989534923}
   - component: {fileID: 1989534922}
-  - component: {fileID: 1989534921}
   m_Layer: 0
   m_Name: BlueButton
   m_TagString: Untagged
@@ -2199,28 +2161,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1989534921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989534920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19fa3a07086ae0418b4bcc9283ec06e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShapesNColors
-  redCube: {fileID: 0}
-  blueCube: {fileID: 0}
-  greenCube: {fileID: 0}
-  redActive: 0
-  blueActive: 0
-  greenActive: 0
-  redButton: {fileID: 0}
-  greenButton: {fileID: 0}
-  blueButton: {fileID: 0}
-  door: {fileID: 1838416151}
 --- !u!65 &1989534922
 BoxCollider:
   m_ObjectHideFlags: 0
