@@ -36,7 +36,7 @@ public class ItemPickup : MonoBehaviour
 
     void MoveObject()
     {
-        if(Vector3.Distance(heldObj.transform.position, holdArea.position) >0.1f)
+        if(Vector3.Distance(heldObj.transform.position, holdArea.position) > 0.1f)
         {
             Vector3 moveDirection = (holdArea.position - heldObj.transform.position);
             heldObjRB.AddForce(moveDirection * pickupForce);
@@ -63,7 +63,7 @@ public class ItemPickup : MonoBehaviour
         heldObjRB.linearDamping = 1;
         heldObjRB.constraints = RigidbodyConstraints.None;
 
-        heldObjRB.transform.parent = holdArea;
+        heldObj.transform.parent = null;
         heldObj = null;
     }
 }

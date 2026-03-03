@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ShapesNColors : MonoBehaviour
 {
+    public GameObject cube; 
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class ShapesNColors : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("fard");
+            var cubeRenderer = cube.GetComponent<Renderer>();
+            cubeRenderer.material.SetColor("_Color", Color.red);
         }
     }
 }

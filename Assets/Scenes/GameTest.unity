@@ -732,6 +732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19fa3a07086ae0418b4bcc9283ec06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapesNColors
+  cube: {fileID: 109881009}
 --- !u!65 &1379849393
 BoxCollider:
   m_ObjectHideFlags: 0
