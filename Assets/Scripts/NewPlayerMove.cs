@@ -2,13 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static System.Runtime.CompilerServices.RuntimeHelpers;
 
-public class PlayerController : MonoBehaviour
+public class NewPlayerMove : MonoBehaviour
 {
     public float moveSpeed = 12;
-    private float jumpForce = 5f;
+    public float jumpForce = 50f;
     public Rigidbody rb;
 
-    public float gravity = 9.8f; //player gravity
     public float groundCheckRadius = 0.15f; //how far off the ground is grounded?
     public LayerMask groundLayer;
     public bool isGrounded;
@@ -16,15 +15,13 @@ public class PlayerController : MonoBehaviour
 
     public ForceMode forceMode;
 
-    private Vector3 velocity;
+    private Vector3 movement;
 
 
-    private CharacterController controller;
 
 
     private void Awake()
     {
-        controller = GetComponent<CharacterController>();
         feet = transform.Find("feet");
 
     }
@@ -33,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         CheckIsGrounded();
         Move();
-        ApplyGravity();
+
 
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
@@ -42,6 +39,12 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void FixedUpdate()
+    {
+        rb.MovePosition(transform.position + movement);
+        movement = Vector3.zero;
+        //compiles movement to one frame
+    }
 
     private void Move()
     {
@@ -49,24 +52,12 @@ public class PlayerController : MonoBehaviour
         float z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
         Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move(move);
+        movement += move;
+     //   rb.linearVelocity = move;
     }
 
     private void CheckIsGrounded()
     {
         isGrounded = Physics.CheckSphere(feet.position, groundCheckRadius, groundLayer);
-    }
-
-
-    private void ApplyGravity()
-    {
-        velocity += Vector3.down * gravity * Time.deltaTime;
-
-        if (isGrounded)
-        {
-            velocity = Vector3.zero;
-        }
-
-        controller.Move(velocity); 
     }
 }
