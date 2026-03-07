@@ -11,7 +11,7 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
-    private int index;
+    public int index;
 
    
 
@@ -42,7 +42,7 @@ public class Dialogue : MonoBehaviour
 
 
 
-    public void StartDialogue()
+    void StartDialogue()
     {
         //will start with the first line in the index
         index = 0;
