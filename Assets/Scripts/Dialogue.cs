@@ -40,6 +40,14 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+      void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            StartDialogue();
+            Debug.Log("Dialogue writing starts");
+        }
+    }
 
 
     void StartDialogue()

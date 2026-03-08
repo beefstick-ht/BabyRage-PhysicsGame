@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 12;
     private float jumpForce = 5f;
+
+    public bool pause = false;
+
     public Rigidbody rb;
 
     public float gravity = 9.8f; //player gravity
@@ -43,13 +46,16 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void Move()
+    public void Move()
     {
+        if(pause == false)
+        {
         float x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move);
+        }
     }
 
     private void CheckIsGrounded()
