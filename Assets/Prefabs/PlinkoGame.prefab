@@ -974,7 +974,7 @@ Transform:
   m_GameObject: {fileID: 1380808540439588473}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.69, y: 20.490002, z: 0.10999783}
+  m_LocalPosition: {x: -16.96, y: 20.490002, z: 0.57}
   m_LocalScale: {x: 1.4631983, y: 0.23743434, z: 1.4631983}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5952,6 +5952,7 @@ MonoBehaviour:
   respawnButton: {fileID: 7205849981253256714}
   plinkoRespawn: {fileID: 7697993672313312132}
   buttonPressed: 0
+  token: {fileID: 7944336707992101222}
 --- !u!1 &7267612475288157502
 GameObject:
   m_ObjectHideFlags: 0
@@ -7008,7 +7009,7 @@ Transform:
   m_GameObject: {fileID: 7944336707992101222}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.69, y: 20.49, z: 0.11}
+  m_LocalPosition: {x: -16.94, y: 20.49, z: 0.6}
   m_LocalScale: {x: 1.4631983, y: 0.23743434, z: 1.4631983}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7149,11 +7150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b382549166c2c3d4eafeede6bfb80697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
-  plinkoTrigger: {fileID: 0}
   win: 0
-  plinkoEmission: {fileID: 0}
-  plinkoNormal: {fileID: 0}
-  triggerRender: {fileID: 0}
+  fire: {fileID: 0}
+  spawnDelay: 2
+  deathRespawn: {fileID: 0}
 --- !u!1 &8094044368985611180
 GameObject:
   m_ObjectHideFlags: 0

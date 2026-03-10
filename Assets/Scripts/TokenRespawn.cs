@@ -6,10 +6,11 @@ public class TokenRespawn : MonoBehaviour
     public GameObject respawnButton;
     public Transform plinkoRespawn;
     public bool buttonPressed;
+    public GameObject token;
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(buttonPressed==true)
         {
@@ -19,11 +20,15 @@ public class TokenRespawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.tag == "Player")
+        {
         buttonPressed = true;
+        }
+
     }
 
     public void Spawn()
     {
-        transform.position = plinkoRespawn.position;
+        token.transform.position = plinkoRespawn.position;
     }
 }

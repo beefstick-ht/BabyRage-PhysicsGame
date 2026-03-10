@@ -1,21 +1,14 @@
+using System.Collections;
 using UnityEngine;
 
 public class Plinko : MonoBehaviour
 {
     [Header("Cubes")]
-    public GameObject plinkoTrigger;
     public bool win;
 
-    public Material plinkoEmission;
-    public Material plinkoNormal;
-
-    public MeshRenderer triggerRender;
-
-    void Start()
-    {
-        triggerRender = plinkoTrigger.GetComponent<MeshRenderer>();
-    }
-
+    public GameObject fire;
+    public float spawnDelay;
+    public Transform deathRespawn;
     public void Win()
     {
         win = true;
@@ -23,17 +16,39 @@ public class Plinko : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlinkoToken")
+        if (other.tag == "PlinkoWin")
         {
-            triggerRender.material = plinkoEmission;
+            //start dialogue w/ Angus again
+            Debug.Log("Talkin to my boy");
+        }
+        if (other.tag == "BlowUp")
+        {
+            fire.SetActive(true);
+            StartCoroutine(Respawning());
+            Debug.Log("damn you sploded");
+
+        }
+        if (other.tag == "Money1")
+        {
+            Debug.Log("RICHES");
+
+        }
+        if (other.tag == "Money2")
+        {
+            Debug.Log("More RICHES");
+
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void Spawn()
     {
-        if (other.tag == "PlinkoToken")
-        {
-            triggerRender.material = plinkoNormal;
-        }
+        //player's position will be set to the spawnpoint's position
+        transform.position = deathRespawn.position;
+    }
+
+    IEnumerator Respawning()
+    {
+        yield return new WaitForSeconds(spawnDelay);
+        Spawn();
     }
 }
