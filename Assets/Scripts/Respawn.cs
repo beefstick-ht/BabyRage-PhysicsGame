@@ -32,7 +32,6 @@ public class Respawn : MonoBehaviour
         {
             fire.SetActive(true);
             StartCoroutine(Respawning());
-            Spawn();
         }
     }
 
@@ -45,5 +44,7 @@ public class Respawn : MonoBehaviour
     IEnumerator Respawning()
     {
         yield return new WaitForSeconds(spawnDelay);
+        Spawn();
+        fire.SetActive(false);
     }
 }

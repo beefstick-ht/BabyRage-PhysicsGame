@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
   spawnPoint: {fileID: 1605738448}
   fire: {fileID: 2042228221}
+  spawnDelay: 3
 --- !u!1001 &383663646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -194,6 +195,10 @@ PrefabInstance:
     - target: {fileID: 3927346545106587356, guid: 6a0a3b16da3cd424691f3a119a9faba5, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985524598959455637, guid: 6a0a3b16da3cd424691f3a119a9faba5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
