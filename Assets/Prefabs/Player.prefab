@@ -71,6 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6125485926337989254}
+  - component: {fileID: 2371818093259258577}
   - component: {fileID: 4229071313861155353}
   - component: {fileID: 6160138139562968787}
   - component: {fileID: 4079228637382523917}
@@ -99,6 +100,23 @@ Transform:
   - {fileID: 5357196956585580285}
   m_Father: {fileID: 4231166696656285846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2371818093259258577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2665660293590824940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 44856a624ecefa04ba4dcbbe5dd733b2, type: 2}
 --- !u!20 &4229071313861155353
 Camera:
   m_ObjectHideFlags: 0
@@ -350,7 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
   holdArea: {fileID: 3941488740389081297}
-  pickupRange: 5
+  pickupRange: 500
   pickupForce: 150
 --- !u!114 &6953446617371960092
 MonoBehaviour:
@@ -467,8 +485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Respawn
   spawnPoint: {fileID: 0}
-  fire: {fileID: 0}
-  spawnDelay: 0
+  fire: {fileID: 737386981110052941}
+  spawnDelay: 1
 --- !u!1 &5001769245328654164
 GameObject:
   m_ObjectHideFlags: 0

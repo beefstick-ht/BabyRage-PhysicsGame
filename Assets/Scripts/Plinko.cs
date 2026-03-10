@@ -13,6 +13,10 @@ public class Plinko : MonoBehaviour
     {
         win = true;
     }
+    private void Start()
+    {
+        fire.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {

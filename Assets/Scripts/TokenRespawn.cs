@@ -30,5 +30,7 @@ public class TokenRespawn : MonoBehaviour
     public void Spawn()
     {
         token.transform.position = plinkoRespawn.position;
+        buttonPressed = false;
+        token.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
     }
 }
