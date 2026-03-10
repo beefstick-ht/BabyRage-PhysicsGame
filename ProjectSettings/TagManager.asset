@@ -8,6 +8,7 @@ TagManager:
   - BlueCube
   - GreenCube
   - PlinkoToken
+  - Hazard
   layers:
   - Default
   - TransparentFX
