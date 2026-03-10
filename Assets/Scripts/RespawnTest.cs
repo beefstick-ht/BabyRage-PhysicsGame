@@ -11,20 +11,6 @@ public class Respawn : MonoBehaviour
 
     public float spawnDelay;
 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        fire.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnCollisionEnter(Collision other)
     {
         //check if the player is colliding with the object
@@ -32,7 +18,8 @@ public class Respawn : MonoBehaviour
         {
             fire.SetActive(true);
             StartCoroutine(Respawning());
-            Spawn();
+            Debug.Log("timer?");
+            
         }
     }
 
@@ -45,5 +32,6 @@ public class Respawn : MonoBehaviour
     IEnumerator Respawning()
     {
         yield return new WaitForSeconds(spawnDelay);
+        Spawn();
     }
 }

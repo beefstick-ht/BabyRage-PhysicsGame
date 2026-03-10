@@ -8,6 +8,11 @@ TagManager:
   - BlueCube
   - GreenCube
   - PlinkoToken
+  - Hazard
+  - PlinkoWin
+  - BlowUp
+  - Money1
+  - Money2
   layers:
   - Default
   - TransparentFX

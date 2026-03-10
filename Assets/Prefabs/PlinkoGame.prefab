@@ -1,5 +1,187 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2976669218719219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5261854923318081433}
+  - component: {fileID: 5208342401364009463}
+  - component: {fileID: 5360239974037699697}
+  - component: {fileID: 4508450659025699392}
+  - component: {fileID: 5093975937429375181}
+  m_Layer: 0
+  m_Name: MONEY1
+  m_TagString: Money1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5261854923318081433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976669218719219}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.4205978, y: -9.9757, z: 0.6282959}
+  m_LocalScale: {x: 1.7172999, y: 2.5649, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4592708448131075364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5208342401364009463
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976669218719219}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5360239974037699697
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976669218719219}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4508450659025699392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976669218719219}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &5093975937429375181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976669218719219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 2976669218719219}
+  plinkoEmission: {fileID: 2100000, guid: e5767bfc77cc6fa42bbe7bc090692760, type: 2}
+  plinkoNormal: {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  triggerRender: {fileID: 5360239974037699697}
+--- !u!1 &17859743346761320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106482789371431909}
+  - component: {fileID: 1245544178307070406}
+  m_Layer: 0
+  m_Name: BoxThatKillsYou
+  m_TagString: Hazard
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106482789371431909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17859743346761320}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -5.2, y: 10.5, z: 25.2}
+  m_LocalScale: {x: 46.232323, y: 9.691905, z: 14.654494}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1671561575720204279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1245544178307070406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17859743346761320}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &758135029694563379
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &938854849395260809
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &1065398491968791964
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +683,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &1154246646092172340
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &1251908365926395624
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +945,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
+--- !u!1 &1380808540439588473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7697993672313312132}
+  m_Layer: 0
+  m_Name: BaleStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7697993672313312132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380808540439588473}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -16.69, y: 20.490002, z: 0.10999783}
+  m_LocalScale: {x: 1.4631983, y: 0.23743434, z: 1.4631983}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1671561575720204279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413402951992980042
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +1107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &1930820719943873665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1350,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &2511370272468304343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1481,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &2586384331800784869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,6 +1612,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
+--- !u!1 &2704273823983344933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9176226249683058488}
+  - component: {fileID: 2266040045153329812}
+  - component: {fileID: 8738736142214089431}
+  - component: {fileID: 4452884288917270404}
+  - component: {fileID: 4391052233134958988}
+  m_Layer: 0
+  m_Name: MONEY1 (1)
+  m_TagString: Money1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9176226249683058488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704273823983344933}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.4389434, y: -9.9757, z: 0.6282959}
+  m_LocalScale: {x: 1.7172999, y: 2.5649, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4592708448131075364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2266040045153329812
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704273823983344933}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8738736142214089431
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704273823983344933}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4452884288917270404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704273823983344933}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &4391052233134958988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704273823983344933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 2704273823983344933}
+  plinkoEmission: {fileID: 2100000, guid: e5767bfc77cc6fa42bbe7bc090692760, type: 2}
+  plinkoNormal: {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  triggerRender: {fileID: 8738736142214089431}
 --- !u!1 &2901989768174838189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,6 +2060,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &3248958815278253836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +2100,10 @@ Transform:
   - {fileID: 5468526197279932613}
   - {fileID: 3654015847614957589}
   - {fileID: 9166206150465278170}
-  - {fileID: 2665259102340331514}
+  - {fileID: 1106482789371431909}
+  - {fileID: 4592708448131075364}
+  - {fileID: 7697993672313312132}
+  - {fileID: 5839539845910404541}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3357185055799064122
@@ -1848,6 +2233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &3501120706492632387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,6 +2349,135 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3599335526277554300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7597762203084513663}
+  - component: {fileID: 4080406875922163527}
+  - component: {fileID: 2781413808748505770}
+  - component: {fileID: 7488745399839932710}
+  - component: {fileID: 1875701703122563975}
+  m_Layer: 0
+  m_Name: MONEY2 (1)
+  m_TagString: Money2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7597762203084513663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599335526277554300}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.4199476, y: -9.9757, z: 0.6282959}
+  m_LocalScale: {x: 1.9240627, y: 2.5649, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4592708448131075364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4080406875922163527
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599335526277554300}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2781413808748505770
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599335526277554300}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7488745399839932710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599335526277554300}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &1875701703122563975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599335526277554300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 3599335526277554300}
+  plinkoEmission: {fileID: 2100000, guid: e5767bfc77cc6fa42bbe7bc090692760, type: 2}
+  plinkoNormal: {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  triggerRender: {fileID: 2781413808748505770}
 --- !u!1 &3607876697472197170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2605,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &3706487900121149650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &3725639246289513009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2904,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &4254083557395349313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,6 +3035,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &4428027397144781618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +3166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &4433917378432936304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +3297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &4754336864577652286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &4994715288138130671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3162,6 +3708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5155399377960347371
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,6 +3839,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5282699324484047777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,6 +3970,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5304540044981752657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +4101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5310425342919427020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,6 +4269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5575025093377292001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3834,6 +4400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5730535334566174170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,6 +4531,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &5936576751559048148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,6 +4662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &6515436474527419018
 GameObject:
   m_ObjectHideFlags: 0
@@ -4327,6 +4905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &6544145422775171084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4454,6 +5036,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &6634775143351779441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,6 +5167,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
+--- !u!1 &6755140336862989866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 815468741861788084}
+  - component: {fileID: 3000384417989761659}
+  - component: {fileID: 4445871040315412684}
+  - component: {fileID: 6785159133303457204}
+  - component: {fileID: 1282737650658522968}
+  m_Layer: 0
+  m_Name: BLOW UP
+  m_TagString: BlowUp
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &815468741861788084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755140336862989866}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4874911, y: -9.9757, z: 0.6282959}
+  m_LocalScale: {x: 1.7172999, y: 2.5649, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4592708448131075364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3000384417989761659
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755140336862989866}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4445871040315412684
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755140336862989866}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eab966dd440baab4385707d73e6072ec, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6785159133303457204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755140336862989866}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &1282737650658522968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755140336862989866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 6755140336862989866}
+  plinkoEmission: {fileID: 2100000, guid: 0ba10bce7d9b8944aa5c3f87b94bbadb, type: 2}
+  plinkoNormal: {fileID: 2100000, guid: eab966dd440baab4385707d73e6072ec, type: 2}
+  triggerRender: {fileID: 4445871040315412684}
 --- !u!1 &6854350360949742009
 GameObject:
   m_ObjectHideFlags: 0
@@ -4708,6 +5427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &6945986521515551859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4835,6 +5558,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &6954431260659626640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,6 +5689,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &7015926889611734363
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,6 +5820,138 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
+--- !u!1 &7205849981253256714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5839539845910404541}
+  - component: {fileID: 1247297406518261012}
+  - component: {fileID: 8968780496855318289}
+  - component: {fileID: 3815809757984512157}
+  - component: {fileID: 6421370105832321110}
+  m_Layer: 0
+  m_Name: RespawnButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5839539845910404541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205849981253256714}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -15.53, y: 5.81, z: 21.54}
+  m_LocalScale: {x: 1.6605396, y: 1.6605396, z: 1.6605396}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1671561575720204279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1247297406518261012
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205849981253256714}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8968780496855318289
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205849981253256714}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: abd561aedf5e53d4f9eb6977ace083aa, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3815809757984512157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205849981253256714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &6421370105832321110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205849981253256714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbdfcc9859255c4eb1ba927db0bc0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TokenRespawn
+  respawnButton: {fileID: 7205849981253256714}
+  plinkoRespawn: {fileID: 7697993672313312132}
+  buttonPressed: 0
 --- !u!1 &7267612475288157502
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,6 +6079,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &7299102646395265001
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,9 +6207,10 @@ GameObject:
   - component: {fileID: 7599930775793044537}
   - component: {fileID: 230641808456507643}
   - component: {fileID: 2104122764083747546}
+  - component: {fileID: 496232620785378869}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: WIN!
+  m_TagString: PlinkoWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5355,12 +6223,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7559728801450767556}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -3.92, y: -7.52, z: 0.06}
-  m_LocalScale: {x: 2.8516448, y: 4.259118, z: 1.6605396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5479916, y: -9.9757, z: 0.6282959}
+  m_LocalScale: {x: 1.7172999, y: 2.5649, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1671561575720204279}
+  m_Father: {fileID: 4592708448131075364}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7599930775793044537
 MeshFilter:
@@ -5395,7 +6263,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: d3614b4580d63f04a87715bbcb3638cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5434,12 +6302,157 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &496232620785378869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559728801450767556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 7559728801450767556}
+  plinkoEmission: {fileID: 2100000, guid: 126f7dc1c7ce7804985699282ffb4dc7, type: 2}
+  plinkoNormal: {fileID: 2100000, guid: d3614b4580d63f04a87715bbcb3638cc, type: 2}
+  triggerRender: {fileID: 230641808456507643}
+--- !u!1 &7665492589580491064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72197790235169706}
+  - component: {fileID: 1796775974857193542}
+  - component: {fileID: 4084524043343717382}
+  - component: {fileID: 7743453041957946147}
+  - component: {fileID: 1102451284444699486}
+  m_Layer: 0
+  m_Name: MONEY2
+  m_TagString: Money2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &72197790235169706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665492589580491064}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.4142046, y: -9.9757, z: 0.6282959}
+  m_LocalScale: {x: 1.9240627, y: 2.5649, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4592708448131075364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1796775974857193542
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665492589580491064}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4084524043343717382
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665492589580491064}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7743453041957946147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665492589580491064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+--- !u!114 &1102451284444699486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665492589580491064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 7665492589580491064}
+  plinkoEmission: {fileID: 2100000, guid: e5767bfc77cc6fa42bbe7bc090692760, type: 2}
+  plinkoNormal: {fileID: 2100000, guid: 7d12828b230565645af8bf7cbda7e0cc, type: 2}
+  triggerRender: {fileID: 4084524043343717382}
 --- !u!1 &7732095497950370746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5567,6 +6580,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &7757259617197253415
 GameObject:
   m_ObjectHideFlags: 0
@@ -5694,6 +6711,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &7845142331805957567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,6 +6842,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &7939732602567923893
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,6 +6973,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &7944336707992101222
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,6 +6991,7 @@ GameObject:
   - component: {fileID: 7272999153700929055}
   - component: {fileID: 2345662438622139646}
   - component: {fileID: 8241611094114988618}
+  - component: {fileID: 1069508690211053765}
   m_Layer: 0
   m_Name: Haybale
   m_TagString: PlinkoToken
@@ -5978,7 +7008,7 @@ Transform:
   m_GameObject: {fileID: 7944336707992101222}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -7.5, y: 19.76, z: 0.11}
+  m_LocalPosition: {x: -16.69, y: 20.49, z: 0.11}
   m_LocalScale: {x: 1.4631983, y: 0.23743434, z: 1.4631983}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6017,7 +7047,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: abd561aedf5e53d4f9eb6977ace083aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6107,6 +7137,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1069508690211053765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7944336707992101222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b382549166c2c3d4eafeede6bfb80697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  win: 0
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &8094044368985611180
 GameObject:
   m_ObjectHideFlags: 0
@@ -6346,6 +7393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &8524378701181196732
 GameObject:
   m_ObjectHideFlags: 0
@@ -6473,6 +7524,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &8525358308427951911
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,6 +7655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &8627390503818389365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,6 +7786,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &8694317676721862503
 GameObject:
   m_ObjectHideFlags: 0
@@ -6854,6 +7917,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1 &8740907481014587767
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,6 +8048,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
+--- !u!1 &9050322649427822016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4592708448131075364}
+  m_Layer: 0
+  m_Name: Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4592708448131075364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9050322649427822016}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -4.829962, y: 9.045046, z: 1.1033102}
+  m_LocalScale: {x: 1.6605396, y: 1.6605396, z: 1.6605396}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2665259102340331514}
+  - {fileID: 815468741861788084}
+  - {fileID: 5261854923318081433}
+  - {fileID: 9176226249683058488}
+  - {fileID: 72197790235169706}
+  - {fileID: 7597762203084513663}
+  m_Father: {fileID: 1671561575720204279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9211665182644305301
 GameObject:
   m_ObjectHideFlags: 0
@@ -7108,6 +8216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325c7bd033e249b48a34e60dae128a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Plinko
+  plinkoTrigger: {fileID: 0}
+  plinkoEmission: {fileID: 0}
+  plinkoNormal: {fileID: 0}
+  triggerRender: {fileID: 0}
 --- !u!1001 &170668385429920303
 PrefabInstance:
   m_ObjectHideFlags: 0

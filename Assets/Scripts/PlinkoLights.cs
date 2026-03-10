@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class Plinko : MonoBehaviour
+public class PlinkoLights : MonoBehaviour
 {
     [Header("Cubes")]
     public GameObject plinkoTrigger;
-    public bool win;
 
     public Material plinkoEmission;
     public Material plinkoNormal;
@@ -14,11 +13,6 @@ public class Plinko : MonoBehaviour
     void Start()
     {
         triggerRender = plinkoTrigger.GetComponent<MeshRenderer>();
-    }
-
-    public void Win()
-    {
-        win = true;
     }
 
     private void OnTriggerEnter(Collider other)
