@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
+    public Sprite original;
+    public Sprite fire;
 
     public void OnButtonClick(GameObject clickedbutton)
     {
@@ -24,6 +26,16 @@ public class Buttons : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("GameTest");
+    }
+
+    public void OnMouseOver()
+    {
+        transform.GetComponent<SpriteRenderer>().sprite = fire;
+    }
+
+    public void OnMouseExit()
+    {
+        transform.GetComponent<SpriteRenderer>().sprite = original;
     }
 
     public void Quit()
