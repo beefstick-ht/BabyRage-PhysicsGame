@@ -5,7 +5,11 @@ public class ClickAnimal : MonoBehaviour
 {
      public Image dialogueBox;
      public Dialogue dialogueScript;
-     private PlayerController movementScript;
+     //public PlayerController movementScript;
+     public Camera dialogueCam;
+
+    public GameObject player;
+
 
     //public GameObject player; 
 
@@ -46,17 +50,20 @@ public class ClickAnimal : MonoBehaviour
             if(dialogueScript.index < dialogueScript.lines.Length - 1)
             {
                 dialogueBox.enabled = true;
-                PlayerController[] moveScript = FindObjectsOfType<PlayerController>();
-                foreach(PlayerController scriptInstance in moveScript)
+                dialogueScript.StartDialogue();
+                player.SetActive(false);
+                dialogueCam.gameObject.SetActive(true);
+                //PlayerController[] moveScript = FindObjectsOfType<PlayerController>();
+                /*foreach(PlayerController scriptInstance in moveScript)
                 {
                     scriptInstance.pause = true;
                     Debug.Log("paused movement");
-                }
+                }*/
             }
             else 
             {
                 dialogueBox.enabled = false;
-                movementScript.pause = false;
+                //movementScript.pause = false;
             }
         }
     }

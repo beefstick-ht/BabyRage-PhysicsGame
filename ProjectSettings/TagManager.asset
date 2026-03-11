@@ -9,6 +9,8 @@ TagManager:
   - GreenCube
   - PlinkoToken
   - Hazard
+  - Play
+  - Quit
   layers:
   - Default
   - TransparentFX
