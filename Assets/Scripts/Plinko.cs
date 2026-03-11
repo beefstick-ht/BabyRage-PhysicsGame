@@ -1,81 +1,58 @@
+using System.Collections;
 using UnityEngine;
 
 public class Plinko : MonoBehaviour
 {
     [Header("Cubes")]
-    public GameObject redCube;
-    public GameObject blueCube;
-    public GameObject greenCube;
+    public bool win;
 
-    public bool redActive;
-    public bool blueActive;
-    public bool greenActive;
-
-    public GameObject redButton;
-    public GameObject greenButton;
-    public GameObject blueButton;
-
-    public Material redEmission;
-    public Material redNormal;
-    public Material blueEmission;
-    public Material blueNormal;
-    public Material greenEmission;
-    public Material greenNormal;
-
-    public MeshRenderer redRenderer;
-    public MeshRenderer blueRenderer;
-    public MeshRenderer greenRenderer;
-
-    public GameObject door;
-
-    void Start()
+    public GameObject fire;
+    public float spawnDelay;
+    public Transform deathRespawn;
+    public void Win()
     {
-        redActive = false;
-        blueActive = false;
-        greenActive = false;
-
-        redRenderer = redButton.GetComponent<MeshRenderer>();
-        blueRenderer = blueButton.GetComponent<MeshRenderer>();
-        greenRenderer = greenButton.GetComponent<MeshRenderer>();
+        win = true;
     }
-
-    void Update()
+    private void Start()
     {
-        if (redActive & blueActive & greenActive == true)
-        {
-            door.SetActive(false);
-        }
+        fire.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "RedCube")
+        if (other.tag == "PlinkoWin")
         {
-            Debug.Log("fard");
-            redActive = true;
-            redRenderer.material = redEmission;
+            //start dialogue w/ Angus again
+            Debug.Log("Talkin to my boy");
         }
-        if (other.tag == "BlueCube")
+        if (other.tag == "BlowUp")
         {
-            Debug.Log("gwopt");
-            blueActive = true;
-            blueRenderer.material = blueEmission;
+            fire.SetActive(true);
+            StartCoroutine(Respawning());
+            Debug.Log("damn you sploded");
 
         }
-        if (other.tag == "GreenCube")
+        if (other.tag == "Money1")
         {
-            Debug.Log("blunk");
-            greenActive = true;
-            greenRenderer.material = greenEmission;
+            Debug.Log("RICHES");
+
+        }
+        if (other.tag == "Money2")
+        {
+            Debug.Log("More RICHES");
+
         }
     }
-    private void OnTriggerExit(Collider other)
+
+    public void Spawn()
     {
-        if (other.tag == "GreenCube")
-        {
-            Debug.Log("blunk");
-            greenActive = false;
-            greenRenderer.material = greenNormal;
-        }
+        //player's position will be set to the spawnpoint's position
+        transform.position = deathRespawn.position;
+    }
+
+    IEnumerator Respawning()
+    {
+        yield return new WaitForSeconds(spawnDelay);
+        Spawn();
     }
 }
