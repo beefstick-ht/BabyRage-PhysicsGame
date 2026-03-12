@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Respawn : MonoBehaviour
+public class RespawnTest : MonoBehaviour
 {
 
     public Transform spawnPoint;
