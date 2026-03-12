@@ -26,6 +26,7 @@ public class RespawnTest : MonoBehaviour
     public void Spawn()
     {
         //player's position will be set to the spawnpoint's position
+        fire.SetActive(false);
         transform.position = spawnPoint.position;
     }
 
