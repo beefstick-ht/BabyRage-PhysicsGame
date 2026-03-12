@@ -17,6 +17,7 @@ public class Respawn : MonoBehaviour
     void Start()
     {
         fire.SetActive(false);
+        fire.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -37,6 +38,8 @@ public class Respawn : MonoBehaviour
 
     public void Spawn()
     {
+        fire.SetActive(false);
+        Debug.Log("fire off");
         //player's position will be set to the spawnpoint's position
         transform.position = spawnPoint.position;
     }
@@ -45,6 +48,6 @@ public class Respawn : MonoBehaviour
     {
         yield return new WaitForSeconds(spawnDelay);
         Spawn();
-        fire.SetActive(false);
+        
     }
 }

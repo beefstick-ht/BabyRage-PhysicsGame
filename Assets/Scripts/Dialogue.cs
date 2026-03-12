@@ -20,6 +20,7 @@ public class Dialogue : MonoBehaviour
     public GameObject player;
 
     private bool hasTalked = false;
+    public Image dialogueBox;
 
 
 
@@ -47,15 +48,6 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
-
-     /* void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            StartDialogue();
-            Debug.Log("Dialogue writing starts");
-        }
-    }*/
 
 
     public void StartDialogue()
