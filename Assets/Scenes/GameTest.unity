@@ -3342,8 +3342,8 @@ Transform:
   m_GameObject: {fileID: 1482924050}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 430, y: -29, z: 217}
-  m_LocalScale: {x: 60.007523, y: 10016.568, z: 9924.887}
+  m_LocalPosition: {x: 430, y: -62, z: 217}
+  m_LocalScale: {x: 8.677688, y: 1448.496, z: 1435.2379}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5144,9 +5144,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 44675482582978820, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 44675482582978820, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 352071816466908535, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 352071816466908535, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 689943154460612711, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
       propertyPath: m_Name
       value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767012148983078154, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767012148983078154, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1847010252883865615, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5184,6 +5208,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6062323475885761495, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062323475885761495, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6138661756030721137, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
       propertyPath: m_TreeDistance
       value: 146
@@ -5207,6 +5239,14 @@ PrefabInstance:
     - target: {fileID: 6138661756030721137, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
       propertyPath: m_PreserveTreePrototypeLayers
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348446711636391019, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348446711636391019, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6787664988631959665, guid: 6c44c81c89767ac4f995bba5b5b29f4c, type: 3}
       propertyPath: camera
