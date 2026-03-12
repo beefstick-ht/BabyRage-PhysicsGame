@@ -5,16 +5,12 @@ using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
-    public Sprite original;
-    public Sprite fire;
 
     public void OnButtonClick(GameObject clickedbutton)
     {
         if(clickedbutton.CompareTag("Play"))
         {
-            SceneManager.LoadScene("GameTest");
-            Debug.Log("Game is now playing");
-            //Play();
+            Play();
         }
         
         if(clickedbutton.CompareTag("Quit"))
@@ -23,22 +19,9 @@ public class Buttons : MonoBehaviour
         }
     }
 
-
-
-    /*public void Play()
+    public void Play()
     {
         SceneManager.LoadScene("GameTest");
-        Debug.Log("Game is now playing");
-    }*/
-
-    public void OnMouseOver()
-    {
-        transform.GetComponent<SpriteRenderer>().sprite = fire;
-    }
-
-    public void OnMouseExit()
-    {
-        transform.GetComponent<SpriteRenderer>().sprite = original;
     }
 
     public void Quit()
