@@ -12,7 +12,9 @@ public class Buttons : MonoBehaviour
     {
         if(clickedbutton.CompareTag("Play"))
         {
-            Play();
+            SceneManager.LoadScene("GameTest");
+            Debug.Log("Game is now playing");
+            //Play();
         }
         
         if(clickedbutton.CompareTag("Quit"))
@@ -23,10 +25,11 @@ public class Buttons : MonoBehaviour
 
 
 
-    public void Play()
+    /*public void Play()
     {
         SceneManager.LoadScene("GameTest");
-    }
+        Debug.Log("Game is now playing");
+    }*/
 
     public void OnMouseOver()
     {
