@@ -11,6 +11,15 @@ TagManager:
   - Hazard
   - Play
   - Quit
+  - PlinkoWin
+  - BlowUp
+  - Money1
+  - Money2
+  - SnCBox
+  - SnCCylinder
+  - SnCD20
+  - SnCTriangle
+  - SnCPentagon
   layers:
   - Default
   - TransparentFX
