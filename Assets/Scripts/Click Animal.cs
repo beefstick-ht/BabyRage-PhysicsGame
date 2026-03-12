@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class ClickAnimal : MonoBehaviour
 {
      public Image dialogueBox;
+     public Image nameTag;
      public Dialogue dialogueScript;
      //public PlayerController movementScript;
      public Camera dialogueCam;
@@ -11,35 +12,17 @@ public class ClickAnimal : MonoBehaviour
     public GameObject player;
 
 
-    //public GameObject player; 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
        dialogueBox.enabled = false;
+       nameTag.enabled = false;
        GetComponent<BoxCollider>();
-
-       //movementScript = player.GetComponent<PlayerController>();
-
-       //GetComponent<Dialogue>.StartDialogue();
     }
 
    
     void Update()
     {
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            if(dialogueScript.index < dialogueScript.lines.Length - 1)
-            {
-                dialogueBox.enabled = true;
-            }
-            else 
-            {
-                dialogueBox.enabled = false;
-            }
-            
-        }*/
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,27 +33,16 @@ public class ClickAnimal : MonoBehaviour
             if(dialogueScript.index < dialogueScript.lines.Length - 1)
             {
                 dialogueBox.enabled = true;
+                nameTag.enabled = true;
                 dialogueScript.StartDialogue();
                 player.SetActive(false);
                 dialogueCam.gameObject.SetActive(true);
-                //PlayerController[] moveScript = FindObjectsOfType<PlayerController>();
-                /*foreach(PlayerController scriptInstance in moveScript)
-                {
-                    scriptInstance.pause = true;
-                    Debug.Log("paused movement");
-                }*/
             }
             else 
             {
                 dialogueBox.enabled = false;
-                //movementScript.pause = false;
+                nameTag.enabled = false;
             }
         }
     }
-
-   /*void OnMouseDown()
-   {
-        dialogueBox.enabled = true;
-        Debug.Log("enabled cloud");
-   }*/
 }
