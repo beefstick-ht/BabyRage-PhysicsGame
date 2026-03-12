@@ -19,6 +19,8 @@ public class Dialogue : MonoBehaviour
 
     public GameObject player;
 
+    private bool hasTalked = false;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,7 +42,8 @@ public class Dialogue : MonoBehaviour
             else
             {
                 StopAllCoroutines();
-                text.text = lines[index];    
+                text.text = lines[index];
+                hasTalked = true;    
             }
         }
     }

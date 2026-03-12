@@ -225,14 +225,14 @@ RectTransform:
   m_GameObject: {fileID: 264865945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20.269213, y: 11.202046, z: 16.62}
+  m_LocalScale: {x: 8.471118, y: 4.681674, z: 6.946001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 871501581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -19}
+  m_AnchoredPosition: {x: -6.1079865, y: -1.2547}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264865947
@@ -439,14 +439,14 @@ RectTransform:
   m_GameObject: {fileID: 380362128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.12319, y: 4.0747395, z: 4.0747395}
+  m_LocalScale: {x: 1.7232058, y: 1.7029569, z: 1.7029569}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 871501581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -57.424, y: 254.57}
+  m_AnchoredPosition: {x: -25.932983, y: 113.08}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380362130
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 384370692}
   m_Layer: 5
   m_Name: Play Button
-  m_TagString: Untagged
+  m_TagString: Play
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,7 +578,7 @@ RectTransform:
   m_GameObject: {fileID: 384370687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.587497, y: 38.03972, z: 10.587497}
+  m_LocalScale: {x: 4.424835, y: 15.89795, z: 4.424835}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 901831690}
@@ -586,7 +586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -438, y: -321}
+  m_AnchoredPosition: {x: -184.98999, y: -127.47}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384370689
@@ -608,7 +608,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -618,7 +618,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 64dcb1a223a54154eaccb8cbcdde06b3, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -634,7 +634,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 384370692}
-        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -692,9 +692,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 384370687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491eb75983a7edb4da5f4a28838a40b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 0143dfaf827cac645ae5c654b10d07f1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayButton
+  m_EditorClassIdentifier: Assembly-CSharp::Buttons
+  original: {fileID: 21300000, guid: 7884477a643f1ee4cb3aa8d556fbc73e, type: 3}
+  fire: {fileID: 21300000, guid: 64dcb1a223a54154eaccb8cbcdde06b3, type: 3}
 --- !u!1 &427605551
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,14 +724,14 @@ RectTransform:
   m_GameObject: {fileID: 427605551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20.785929, y: 16.014135, z: 19.335747}
+  m_LocalScale: {x: 8.687069, y: 6.692792, z: 8.080994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 871501581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 207}
+  m_AnchoredPosition: {x: 0.56801605, y: 93.206}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427605553
@@ -818,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1042,14 +1044,14 @@ RectTransform:
   m_GameObject: {fileID: 1794237443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 38.571598, y: 38.571598, z: 38.571598}
+  m_LocalScale: {x: 16.12024, y: 16.12024, z: 16.12024}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 871501581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -684.5, y: -317.5}
+  m_AnchoredPosition: {x: -288, y: -126}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794237445
@@ -1251,14 +1253,14 @@ RectTransform:
   m_GameObject: {fileID: 1895138459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7213755, y: 4.136654, z: 4.136654}
+  m_LocalScale: {x: 1.5552754, y: 1.7288328, z: 1.7288328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 871501581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 449.97, y: 264.76}
+  m_AnchoredPosition: {x: 186.11002, y: 117.34}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895138461
@@ -1376,7 +1378,7 @@ GameObject:
   - component: {fileID: 1913888568}
   m_Layer: 5
   m_Name: Quit Button
-  m_TagString: Untagged
+  m_TagString: Quit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1390,7 +1392,7 @@ RectTransform:
   m_GameObject: {fileID: 1913888563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.646909, y: 36.715183, z: 10.646909}
+  m_LocalScale: {x: 4.4496655, y: 15.344387, z: 4.4496655}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 365765925}
@@ -1398,7 +1400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 405, y: -321.96}
+  m_AnchoredPosition: {x: 167.32, y: -127.86}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913888565
@@ -1446,7 +1448,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1913888568}
-        m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -1504,9 +1506,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1913888563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00da59f535739741ada36d2d95255f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0143dfaf827cac645ae5c654b10d07f1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuitButton
+  m_EditorClassIdentifier: Assembly-CSharp::Buttons
+  original: {fileID: 0}
+  fire: {fileID: 0}
 --- !u!1 &2088842664
 GameObject:
   m_ObjectHideFlags: 0
