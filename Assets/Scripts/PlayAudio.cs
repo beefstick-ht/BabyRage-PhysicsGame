@@ -11,13 +11,26 @@ public class PlayAudio : MonoBehaviour
     private AudioSource audio;
     public BoxCollider bc;
 
-    private void Start()
+    public GameObject fire;
+
+    void Start()
     {
         {
             audio = GetComponent<AudioSource>();
-
         }
     }
+   /* void Update()
+    {
+        if(fire.SetActive(true))
+        {
+            StartCoroutine(FadeAudio(true));
+        }
+        if(fire.SetActive(false))
+        {
+            StopAllCoroutines();
+            StartCoroutine(FadeAudio(true));
+        }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,6 +50,8 @@ public class PlayAudio : MonoBehaviour
 
         }
     }
+
+
 
     private IEnumerator FadeAudio(bool fadeIn)
     {
