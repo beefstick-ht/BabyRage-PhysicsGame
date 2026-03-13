@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Materials/Door.mat.meta
 guid: 3a5d1cfc4847e114186ce57d7e4c0532
 NativeFormatImporter:
+========
+guid: a4cce27b58d2f4949b08f5ffdfe6ed9d
+PrefabImporter:
+>>>>>>>> main:Assets/Prefabs/Angus Dialogue.prefab.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

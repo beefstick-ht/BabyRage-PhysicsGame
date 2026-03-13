@@ -190,6 +190,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b404dee4aae25c41bd51efdf53d89a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8426772986092854206}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b404dee4aae25c41bd51efdf53d89a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1882381048136679742}
   m_SourcePrefab: {fileID: 100100000, guid: 2b404dee4aae25c41bd51efdf53d89a1, type: 3}
 --- !u!1 &1524727111018793259 stripped
 GameObject:
@@ -213,6 +216,27 @@ MonoBehaviour:
   dialogueScript: {fileID: 0}
   dialogueCam: {fileID: 4831566141878840777}
   player: {fileID: 0}
+--- !u!65 &1882381048136679742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524727111018793259}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6430061, y: 1.994278, z: 2.5312612}
+  m_Center: {x: 0.0030751675, y: 0.98646283, z: 0.27449265}
 --- !u!4 &2189659360288740241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b404dee4aae25c41bd51efdf53d89a1, type: 3}
